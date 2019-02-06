@@ -1,6 +1,6 @@
 {
   "name": "mins-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a react framework",
   "main": "index.js",
   "bin": {
