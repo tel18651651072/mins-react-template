@@ -1,4 +1,4 @@
-# mins-react
+# mins-react-create
 a react framework
 
 # 启动
