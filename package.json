@@ -1,11 +1,7 @@
 {
-  "name": "mins-react",
+  "name": "mins-react-template",
   "version": "1.0.2",
   "description": "a react framework",
-  "main": "index.js",
-  "bin": {
-    "mins": "index.js"
-  },
   "scripts": {
     "build": "webpack --config build/webpack.prod.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,17 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tel18651651072/mins-react.git"
+    "url": "git+https://github.com/tel18651651072/mins-react-template.git"
   },
-  "keywords": [
-    "Cxm886"
-  ],
   "author": "chenxm",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tel18651651072/mins-react/issues"
+    "url": "https://github.com/tel18651651072/mins-react-template/issues"
   },
-  "homepage": "https://github.com/tel18651651072/mins-react#readme",
+  "homepage": "https://github.com/tel18651651072/mins-react-template#readme",
   "devDependencies": {
     "autoprefixer": "^9.4.7",
     "babel-core": "^6.26.3",
