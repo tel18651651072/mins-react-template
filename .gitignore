@@ -6,8 +6,5 @@
 # testing
 /coverage
 
-# production
-/build
-
 #打包
 /dist
