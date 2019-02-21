@@ -8,6 +8,20 @@ module.exports = merge(baseWebpackConfig, {
     output: {
         filename: "js/[name].[chunkhash:16].js",
     },
+    externals: {
+        react: {
+            root: "React",
+            commonjs2: "react",
+            commonjs: "react",
+            amd: "react"
+        },
+        "react-dom": {
+            root: "ReactDOM",
+            commonjs2: "react-dom",
+            commonjs: "react-dom",
+            amd: "react-dom"
+        }
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',
@@ -18,6 +32,8 @@ module.exports = merge(baseWebpackConfig, {
                 removeAttributeQuotes: true
             },
         }),
-        new CleanWebpackPlugin(['../dist'], { allowExternal: true })
+        new CleanWebpackPlugin(['../dist'], {
+            allowExternal: true
+        })
     ]
 });

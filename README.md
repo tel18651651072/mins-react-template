@@ -1,4 +1,4 @@
-# mins-react-create
+# mins-react-template
 a react framework
 
 # 启动
