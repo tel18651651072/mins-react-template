@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         rules: [{
-                test: /\.js?$/,
+                test: /(\.jsx|\.js)$/,
                 use: "babel-loader",
                 include: APP_PATH
             },
@@ -49,21 +49,30 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: [{
-                            loader: "css-loader"
-                        },
-                        {
-                            loader: "postcss-loader"
-                        },
-                        {
-                            loader: "sass-loader"
-                        }
-                    ]
-                })
+                use: [
+                    {
+                        loader:"style-loader"
+                    },
+                    {
+                        loader: "css-loader"
+                    },
+                    {
+                        loader: "postcss-loader"
+                    },
+                    {
+                        loader: "sass-loader"
+                    }
+                ]
             }
         ]
+    },
+    resolve: {
+        alias: {
+            vue$: 'vue/dist/vue.esm.js',
+            '@': APP_PATH,
+            'src': APP_PATH,
+            'components': 'src/components'
+        }
     },
     plugins: [
         new ExtractTextPlugin('css/[name].[hash].css')

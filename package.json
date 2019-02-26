@@ -1,6 +1,6 @@
 {
   "name": "mins-react-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a react framework",
   "scripts": {
     "build": "webpack --config build/webpack.prod.conf.js",

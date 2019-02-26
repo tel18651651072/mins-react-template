@@ -1,4 +1,15 @@
+html, body{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
 .app{
+  height: 100%;
   color:#333;  
-  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background: #282c34;
 }

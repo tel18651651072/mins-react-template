@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './index.scss'
-
+import Home from 'components/home/index.jsx'
 class App extends Component {
     constructor(props) {
         super(props)
@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return(
             <div className="app">
-              我是home!!!!
+              <Home/>
             </div>
         )
     }
